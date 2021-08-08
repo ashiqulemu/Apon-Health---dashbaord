@@ -1,0 +1,48 @@
+.theme-primary {
+  background-color: #6B3BB1 !important;
+}
+
+.txt-primary {
+  color: #6B3BB1 !important;
+}
+
+.theme-txt-violet {
+  color: #6B3BB1;
+}
+
+.theme-txt-pink {
+  color: #d45273fd;
+}
+
+.theme-txt-yellow {
+  color: #FFB93B;
+}
+
+.theme-success {
+  background: #00D19C !important;
+}
+
+.theme-1 {
+  background: #e6eaff !important;
+}
+
+.bg-violet {
+  background: #6B3BB1;
+}
+
+.bg-pink {
+  background: #d45273fd;
+}
+
+.bg-yellow {
+  background: #FFB93B;
+}
+
+.theme-2 {
+  background: #ffeeee !important;
+}
+
+.theme-yellow {
+  background: #ffb93b36 !important;
+}
+/*# sourceMappingURL=class.css.map */

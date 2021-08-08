@@ -1,0 +1,479 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apon Health</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.min.css" />
+</head>
+
+<body>
+
+    <!-- header section -->
+    <section class="header shadow-sm mb-1">
+        <div class="container ">
+            <div class="header-portion">
+                <form action="" class='inner-box'>
+                    <div class="brand">
+                        <a href="">
+                            <img src="/images/logo.png " class="img-fluid" alt="Apon Health">
+                        </a>
+                        <select class='cat-mobile'>
+                            <option value="" selected="selected">Choose a Category </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                        </select>
+                    </div>
+                    <div class="category">
+                        <select name="" id="" class="form-control">
+                            <option value="" selected>choose category...</option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <div class="searchArea">
+                            <div class="search-box">
+                                <input type="search" class="form-control medicineSearch"
+                                    placeholder="Search for medicine ">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttons_link">
+                    <img src="./images/images/upload.png" class="img-fluid">
+                    <img src="./images/images/member.png" class="img-fluid">
+                </div>
+                <div class="links">
+                    <a href=""><img src="./images//images/Screenshot_1.png"></a>
+                    <a href=""><img src="./images//images/discount_home.png"></a>
+                    <a href="">
+                        <img src="./images//images/shopping-cart.png">
+                        <div class="cartitem">
+                            99
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobileSearch">
+        <div class="container">
+            <div class="mobileSearchArea">
+
+                <input type="search" class="form-control" placeholder="search for medicine">
+                <div class="mobile-menu-icon" onclick="collapsMenu()">
+                    <span class="iconify" data-icon="gg:menu" data-inline="false"></span>
+                </div>
+                <div class="menu-content" id='mobileMenu'>
+                    <div class="profile">
+                        <img src="/images/images/user.png" alt="">
+                        <h6>John Landish</h6>
+                    </div>
+                    <div class="cash">
+                        <p>
+                            Cash: 120 Tk <br>
+                            Pending : 120 Tk
+                        </p>
+                    </div>
+                    <div class="menuItems">
+                        <ul>
+                            <li><a href="">My Profile</a></li>
+                            <li><a href="">My order</a></li>
+                            <li><a href="">Gift your friend</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="close" onclick="closeMenu()"><span class="iconify" data-icon="eva:close-circle-fill"
+                            data-inline="false"></span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- dashboard  section -->
+    <div class="dashbaord-main">
+        <div class="leftSection" id='leftSidebar'>
+            <!-- <div class="brand">
+                <img src="images/logo.png" alt="">
+            </div> -->
+            <div class="user-profile">
+                <div class="close-dashboard-sidebar">
+                    <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
+                </div>
+                <img src="images/profile.png" alt="">
+                <p class='user-name mb-0'>
+                    <span>John</span>
+                    <span>Landish</span>
+                </p>
+            </div>
+            <nav class="sidenav">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="index.html">
+                            <span class="iconify" data-icon="clarity:dashboard-solid-badged"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="raphael:history"></span>
+                            Purchase History
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="clarity:heart-solid"></span>
+                            Wishlist
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="profile.html">
+                            <span class="iconify" data-icon="icomoon-free:profile"></span>
+                            Manage Profile
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="fontisto:wallet"></span>
+                            My Wallet
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="fluent:note-add-16-filled"></span>
+                            Upload Prescription
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="bpmn:end-event-message"></span>
+                            Request Message
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="ic:outline-medication"></span>
+                            Add Medication
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#">
+                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
+                            Change Password
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" >
+                            <span class="iconify" data-icon="ic:baseline-space-dashboard"></span>
+                            Submenu Item 
+                        </a>
+                        <ul class="sub-item">
+                            <li><a href="#"> <span class="iconify" data-icon="bi:arrow-right-short"></span></span> sub
+                                    items 1</a></li>
+                            <li><a href="#"> <span class="iconify" data-icon="bi:arrow-right-short"></span></span> sub
+                                    items 1</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="rightSection">
+            <div class="topbar">
+                <div class="fold" onclick='foldSidebar();'>
+                    <span class="iconify" data-icon="eva:menu-fill"></span>
+                </div>
+                <!-- <img src="images/logo.png" class="mobile-menu-logo"> -->
+                <div class="right-element">
+                    <div class="dropdown show">
+                        <a class="btn  dropdown-toggle  profile-manage" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="./images/profile.png" > 
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#"><span class="iconify" data-icon="carbon:user-avatar"></span>  Profile</a>
+                          <a class="dropdown-item" href="#"><span class="iconify" data-icon="ion:log-out-outline"></span> Log Out</a> 
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+            <div class="dashboard-content">
+                <div class="rows">
+
+                    <div class="cols">
+                        <div class="card">
+                            <div class="box text-center theme-1 p-3">
+                                <span class="iconify bg-violet" data-icon="mdi-light:cart"></span>
+                                <div class="inner theme-txt-violet">
+                                    <h1 class="my-0 ">05</h1>
+                                    <h5 class="my-0 ">Products in Your cart </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <div class="card">
+                            <div class="box text-center theme-2 p-3">
+                                <span class="iconify bg-pink" data-icon="ei:heart"></span>
+                                <div class="inner theme-txt-pink">
+                                    <h1 class="my-0 ">04</h1>
+                                    <h5 class="my-0 ">in your wishlist </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <div class="card">
+                            <div class="box text-center theme-yellow p-3">
+                                <span class="iconify bg-yellow" data-icon="healthicons:i-note-action-outline"></span>
+                                <div class="inner theme-txt-yellow">
+                                    <h1 class="my-0 ">09</h1>
+                                    <h5 class="my-0">you ordered </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    <footer class="py-3 ">
+        <div class="container">
+            <div class="my-4">
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">INFORMATION</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/account">Account</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/about-us">About Us</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/privacy.html">Privacy Policy</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/tos.html">Terms and Conditions</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">USEFUL LINKS</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item py-1"><a class="text-white" href="https://www.rabibar.com/faq">FAQ</a>
+                            </li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/addresses">Addresses</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/brands">Medicines</a></li>
+
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/offers">Special Offers</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <!-- End Nav Link -->
+                        <div id="contact">
+                            <h5 class="text-white">CONTACT US</h5>
+                            <div class="text-white">
+                                <span class="iconify" data-icon="dashicons:phone" data-inline="false"></span>
+                                01886335834
+                            </div>
+                            <ul class="list-inline mb-0 mt-3 social-sites">
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="ant-design:facebook-filled"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:twitter-square"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:instagram-square"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <!-- End Social Networks -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">OUR APP</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item w-100">
+                                <a class="py-1 d-block app_download_link" href=" ">
+                                    <img loading="lazy" class='img-fluid'
+                                        src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="py-1 d-block app_download_link" href=" "><img class='img-fluid' loading="lazy"
+                                        src="./images/images/apple_store.png"></a>
+                            </li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="background:rgba(255,255,255,0.5)">
+            <div class="space-1">
+                <!-- Copyright -->
+                <div class="text-lg-center mx-lg-auto">
+                    <p class="text-white small">© 2021 Apon Health Limited. All rights reserved.</p>
+                </div>
+                <!-- End Copyright -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/iconify.min.js"></script>
+    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
+    <script src='./js/app.js'> </script>
+    <!-- <script src="./js/slick.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+            effect: 'fade',
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        $('.slider').slick({
+            arrows: true,
+            infinite: true,
+            slidesToShow: 3,
+            accessibility: true,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            prevArrow: "<span class='arrow prev'><i class='fas fa-angle-left'></i></span>",
+            nextArrow: "<span class='arrow next'><i class='fas fa-angle-right'></i></span>",
+            customPaging: function (slider, i) {
+                /* ADDING CUSTOM PAGING
+                 Example
+                 return  return '<li>Something you want to insert</li>';
+         */
+            },
+            responsive: [
+                {
+                    breakpoint: 1920,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 425,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 375,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+
+            ]
+        });
+    </script> -->
+
+</body>
+
+</html>

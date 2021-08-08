@@ -1,0 +1,56 @@
+  //  variables
+
+  $primary :#6B3BB1;
+  $success :#00D19C;
+  $white :#ffffff;
+  $txt:#212121;
+  $pink:#d45273fd;
+  $yellow:#FFB93B;
+
+  .theme-primary {
+      background-color: $primary !important;
+  }
+
+  .txt-primary {
+      color: $primary !important;
+  }
+
+  .theme-txt-violet{
+      color:$primary;
+  }
+
+  .theme-txt-pink{
+      color:$pink;
+  }
+
+  .theme-txt-yellow{
+      color:$yellow;
+  }
+
+  .theme-success {
+      background: $success !important;
+  }
+
+  .theme-1 {
+      background: #e6eaff !important;
+  }
+
+  .bg-violet {
+      background: $primary;
+  }
+
+  .bg-pink {
+      background: $pink;
+  }
+
+  .bg-yellow {
+      background: $yellow;
+  }
+
+  .theme-2 {
+      background: #ffeeee !important;
+  }
+
+  .theme-yellow {
+      background: #ffb93b36 !important
+  }
