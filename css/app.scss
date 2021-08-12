@@ -48,6 +48,7 @@ $danger:rgb(207, 42, 42);
 
 body {
   font-family: "apon-reg", sans-serif;
+
   &::-webkit-scrollbar {
     background-color: #E5EAFD;
     width: 4px;
@@ -1449,6 +1450,7 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   outline: 0;
+
   &:hover {
     background-color: lighten($primary, 6%);
     transform: translateY(-3px);
@@ -1474,6 +1476,7 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   outline: 0;
+
   &:hover {
     background-color: lighten($danger, 6%);
     transform: translateY(-3px);
@@ -1490,6 +1493,7 @@ footer {
 
     &::placeholder {
       font-size: 14px;
+      color: #b8b8b8;
     }
 
     &:focus {
@@ -1502,6 +1506,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
+    margin-left: 0;
+    margin-right: 0;
 
     .form-group {
       flex: 1;
@@ -1514,9 +1520,9 @@ footer {
   }
 
   label {
-    margin-bottom: 0rem;
-    font-size: 15px;
-    color: #454546;
+    margin-bottom: 0.2rem;
+    font-size: 15.4px;
+    color: #6d617f;
   }
 
   .addProfile {
@@ -1575,12 +1581,13 @@ footer {
     margin-top: 15px;
     column-gap: 10px;
     row-gap: 10px;
-   
+
 
     .wishliat-items {
       width: 19.0%;
       position: relative;
       transition: all 0.3s ease-in-out;
+
       @media(max-width:1295px) {
         width: 23.9%;
       }
@@ -1591,7 +1598,7 @@ footer {
 
       .remove-product {
         position: absolute;
-        right:10px;
+        right: 10px;
         top: 10px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1610,9 +1617,11 @@ footer {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-.iconify{
-  font-size: 1.1rem;
-}
+
+        .iconify {
+          font-size: 1.1rem;
+        }
+
         &:hover {
           background-color: indianred;
           color: $white;
@@ -1649,21 +1658,85 @@ footer {
             border-radius: 22px;
             padding: 4 15px;
           }
+
           outline: 0;
         }
       }
 
       &:hover {
-         transform: translateY(-3px);
+        transform: translateY(-3px);
       }
     }
   }
 
 }
-.pagination{
+
+.pagination {
   li {
-    a{
-      color:$primary;
+    a {
+      color: $primary;
     }
   }
+}
+
+.table-custom { 
+  border: 1px solid #eaeaea;
+    border-radius: 4px;
+    overflow: hidden;
+
+  th,
+  td {
+    border: 0;
+  }
+
+  thead {
+    tr {
+      background-color: #eaecf9;
+
+      th {
+        border: 0;
+        text-transform: capitalize;
+        font-size: 15px;
+        color: #5e5c61;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        border: 0;
+        color: #545356;
+        font-size: 14px;
+      }
+
+      &:nth-child(even) {
+        background: #f7f4ff;
+      }
+    }
+  }
+}
+
+.wallet-status{
+  position: relative; 
+  img{
+    user-select: none;
+    pointer-events: none;
+  }
+  .amount{
+    position: absolute;
+    top: 53%;
+    left: 17%;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px #350569;
+    span{
+      font-size: 14px;
+    }
+  }
+}
+
+.data-container{
+  overflow-x: auto;
 }
