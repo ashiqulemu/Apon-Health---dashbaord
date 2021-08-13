@@ -5,16 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apon Health</title>
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/slick.min.css"/>
-    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.min.css" />
 </head>
 
 <body>
-
     <!-- header section -->
     <section class="header shadow-sm mb-1">
         <div class="container ">
@@ -43,7 +40,7 @@
                             <option value="">choose category 1 </option>
                         </select>
                     </div>
-                    <div class="search ">
+                    <div class="search">
                         <div class="searchArea">
                             <div class="search-box">
                                 <input type="search" class="form-control medicineSearch"
@@ -107,7 +104,7 @@
     </section>
     <!-- dashboard  section -->
     <div class="dashbaord-main">
-        <div class="leftSection wow fadeIn" data-wow-delay=".25s" id='leftSidebar'>
+        <div class="leftSection" id='leftSidebar'>
             <!-- <div class="brand">
                 <img src="images/logo.png" alt="">
             </div> -->
@@ -179,9 +176,9 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" >
+                        <a href="#">
                             <span class="iconify" data-icon="ic:baseline-space-dashboard"></span>
-                            Submenu Item 
+                            Submenu Item
                         </a>
                         <ul class="sub-item">
                             <li><a href="#"> <span class="iconify" data-icon="bi:arrow-right-short"></span></span> sub
@@ -202,59 +199,109 @@
                 <!-- <img src="images/logo.png" class="mobile-menu-logo"> -->
                 <div class="right-element">
                     <div class="dropdown show">
-                        <a class="btn  dropdown-toggle  profile-manage" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <img src="./images/profile.png" > 
+                        <a class="btn  dropdown-toggle  profile-manage" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./images/profile.png">
                         </a>
-                      
+
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="#"><span class="iconify" data-icon="carbon:user-avatar"></span>  Profile</a>
-                          <a class="dropdown-item" href="#"><span class="iconify" data-icon="ion:log-out-outline"></span> Log Out</a> 
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                    data-icon="carbon:user-avatar"></span> Profile</a>
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                    data-icon="ion:log-out-outline"></span> Log Out</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
 
             </div>
             <div class="dashboard-content">
-                <div class="rows">
 
-                    <div class="cols">
-                        <div class="card">
-                            <div  data-wow-delay=".25s" class="wow fadeIn box text-center theme-1 p-3 ">
-                                <span class="iconify bg-violet" data-icon="mdi-light:cart"></span>
-                                <div class="inner theme-txt-violet">
-                                    <h1 class="my-0 ">05</h1>
-                                    <h5 class="my-0 ">Products in Your cart </h5>
-                                </div>
+                <section class="profile">
+                    <div class="title-section">
+                        <span class="iconify" data-icon="fontisto:prescription"></span> Upload Prescription
+                    </div>
+                    <div class="infoBox mt-3">
+                        <div class="row col-lg-12 mx-auto">
+                            <div class="col-lg-10 mx-auto">
+                                <form class="form-custom mt-4" action="">
+                                    <div class="row shadow-sm">
+                                        <div class="col-lg-4 col-md-6 bg-white border-right">
+                                            <div class="form-container text-center">
+                                                <img src="./images//images/rx.svg" class="img-fluid mx-auto">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-6 bg-white">
+                                            <div class="form-container">
+                                                <div class="form-row">
+                                                    <div class="form-group">
+                                                        <label>Message </label>
+                                                        <textarea rows="2" class="form-control"
+                                                            placeholder="Type your messege here.."></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group">
+                                                        <label>Photo</label>
+                                                        <input type="file" class="form-control" placeholder="Country">
+                                                    </div>
+                                                </div>
+                                                <button type="submit"
+                                                    class="text-white btn-theme float-right mb-3">Update
+                                                    Prescsription</button>
+                                                <button type="reset"
+                                                    class="text-white btn btn-dark float-right mb-3 mr-2">Cancel</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                            <div class="col-lg-10 mx-auto">
+                                <form class="form-custom " action="">
+                                    <div class="row shadow-sm">
+                                        <div class=" col-md-12 bg-white p-0">
+                                            <div class="form-container">
+                                                <div class="overflow">
+                                                    <table class="table table-custom shadow-sm">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#sl</th>
+                                                                <th>date</th>
+                                                                <th>messege</th>
+                                                                <th>Prescription Image</th>
+                                                                <th>Action </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="#">20210807-021000</a></td>
+                                                                <td>07-08-2021</td>
+                                                                <td style="max-width:200px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quas incidunt officiis?</td>
+                                                                <td>
+                                                                    <img src="images/profile.png"style="width:70px;"> 
+                                                                </td>
+                                                                <td>
+                                                                    <div class="action">
+                                                                        <a href="" title="Edit"><span class="iconify mr-2" data-icon="emojione:pencil"></span></a>
+                                                                        <a href="" title="View"><span class="iconify mr-2" data-icon="emojione:eye"></span></a>
+                                                                        <a href="" title="Delete"><span class="iconify text-danger" data-icon="fluent:delete-20-filled"></span> </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr> 
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="cols">
-                        <div class="card">
-                            <div  data-wow-delay=".30s" class="wow fadeIn box text-center theme-2 p-3 ">
-                                <span class="iconify bg-pink" data-icon="ei:heart"></span>
-                                <div class="inner theme-txt-pink">
-                                    <h1 class="my-0 ">04</h1>
-                                    <h5 class="my-0 ">in your wishlist </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cols">
-                        <div class="card">
-                            <div  data-wow-delay=".35s" class="wow fadeIn box text-center theme-yellow p-3 ">
-                                <span class="iconify bg-yellow" data-icon="healthicons:i-note-action-outline"></span>
-                                <div class="inner theme-txt-yellow">
-                                    <h1 class="my-0 ">09</h1>
-                                    <h5 class="my-0">you ordered </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-
-
-
-                </div>
+                </section>
             </div>
         </div>
     </div>
@@ -265,7 +312,7 @@
         <div class="container">
             <div class="my-4">
                 <div class="row justify-content-lg-between">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                    <div class="col-lg-3 col-lg-3 col-sm-6 col-6 my-2">
                         <h5 class="text-white">INFORMATION</h5>
                         <!-- Nav Link -->
                         <ul class="nav nav-sm nav-x-0 nav-white flex-column">
@@ -365,13 +412,115 @@
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/iconify.min.js"></script> 
-    <script src="./js/wow.min.js"></script>
-
+    <script src="./js/iconify.min.js"></script>
+    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
     <script src='./js/app.js'> </script>
+    <!-- <script src="./js/slick.min.js"></script>
     <script>
-        new WOW().init(); 
-    </script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+            effect: 'fade',
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        $('.slider').slick({
+            arrows: true,
+            infinite: true,
+            slidesToShow: 3,
+            accessibility: true,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            prevArrow: "<span class='arrow prev'><i class='fas fa-angle-left'></i></span>",
+            nextArrow: "<span class='arrow next'><i class='fas fa-angle-right'></i></span>",
+            customPaging: function (slider, i) {
+                /* ADDING CUSTOM PAGING
+                 Example
+                 return  return '<li>Something you want to insert</li>';
+         */
+            },
+            responsive: [
+                {
+                    breakpoint: 1920,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 425,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 375,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+
+            ]
+        });
+    </script> -->
 
 </body>
 
