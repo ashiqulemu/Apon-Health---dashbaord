@@ -1972,6 +1972,12 @@ footer .social-sites li a .iconify {
   font-size: 14px;
 }
 
+.wallet-status .rechrg-wallet {
+  position: absolute;
+  top: 23px;
+  right: 4px;
+}
+
 .data-container {
   overflow-x: auto;
 }
