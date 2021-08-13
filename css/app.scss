@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-
+@import "class.scss";
 
 //   variables
 
@@ -56,7 +56,7 @@ body {
 
   &::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background: #703BAB;
+    background: $primary;
   }
 }
 
@@ -1046,7 +1046,7 @@ footer {
 
 // dashboard 
 
-@import "class.scss";
+
 
 .dashbaord-main {
   display: flex;
@@ -1097,7 +1097,7 @@ footer {
         cursor: pointer;
         height: 30px;
         width: 30px;
-        border: 2px solid #6b3bb1;
+        border: 2px solid $primary;
         border-radius: 50%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1156,7 +1156,7 @@ footer {
 
       &::-webkit-scrollbar-thumb {
         border-radius: 50px;
-        background: #703BAB;
+        background: $primary;
       }
 
 
@@ -1166,7 +1166,7 @@ footer {
           margin: 1px 0;
 
           &:hover {
-            background-color: #6B3BB1;
+            background-color: #0962A8;
             border-radius: 6px;
 
             a {
@@ -1179,7 +1179,7 @@ footer {
           }
 
           &.active {
-            background-color: $primary;
+            background:#0962A8 ;
             border-radius: 6px;
 
             a {
@@ -1199,7 +1199,7 @@ footer {
                   background: #efe6fd !important;
 
                   &:hover {
-                    background: #945dff !important;
+                    background: #0064A4 !important;
                     color: #fff;
 
                     .iconify {
@@ -1220,7 +1220,7 @@ footer {
             text-transform: capitalize;
 
             .iconify {
-              color: #7c80ff;
+              color: #559ffb;
               margin-right: 8px;
             }
           }
@@ -1270,7 +1270,7 @@ footer {
       .fold {
         cursor: pointer;
         font-size: 2rem;
-        color: #6B3BB1;
+        color: $primary;
         display: inline-block;
       }
     }
@@ -1420,7 +1420,7 @@ footer {
 
 .profile {
   .title-section {
-    background-color: #6b3bb117;
+    background-color: lighten($primary,60%);
     padding: 9px 16px;
     color: $primary;
     font-weight: bold;
@@ -1547,7 +1547,7 @@ footer {
 
       &:after {
         top: 0;
-        background-color: #6b3bb1;
+        background-color: $primary;
         right: 0;
         content: '\270F';
         position: absolute;
@@ -1633,7 +1633,7 @@ footer {
       }
 
       .title {
-        color: #6b3bb1;
+        color: $primary;
         text-align: center;
         margin: 9px 0;
         font-weight: bold;

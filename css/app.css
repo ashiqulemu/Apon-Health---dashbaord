@@ -5,6 +5,54 @@
           box-sizing: border-box;
 }
 
+.theme-primary {
+  background-color: #6B3BB1 !important;
+}
+
+.txt-primary {
+  color: #6B3BB1 !important;
+}
+
+.theme-txt-violet {
+  color: #6B3BB1;
+}
+
+.theme-txt-pink {
+  color: #d45273fd;
+}
+
+.theme-txt-yellow {
+  color: #FFB93B;
+}
+
+.theme-success {
+  background: #00D19C !important;
+}
+
+.theme-1 {
+  background: #e6eaff !important;
+}
+
+.bg-violet {
+  background: #6B3BB1;
+}
+
+.bg-pink {
+  background: #d45273fd;
+}
+
+.bg-yellow {
+  background: #FFB93B;
+}
+
+.theme-2 {
+  background: #ffeeee !important;
+}
+
+.theme-yellow {
+  background: #ffb93b36 !important;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -42,7 +90,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: #703BAB;
+  background: #0D62A8;
 }
 
 .header {
@@ -1154,54 +1202,6 @@ footer .social-sites li a .iconify {
   }
 }
 
-.theme-primary {
-  background-color: #6B3BB1 !important;
-}
-
-.txt-primary {
-  color: #6B3BB1 !important;
-}
-
-.theme-txt-violet {
-  color: #6B3BB1;
-}
-
-.theme-txt-pink {
-  color: #d45273fd;
-}
-
-.theme-txt-yellow {
-  color: #FFB93B;
-}
-
-.theme-success {
-  background: #00D19C !important;
-}
-
-.theme-1 {
-  background: #e6eaff !important;
-}
-
-.bg-violet {
-  background: #6B3BB1;
-}
-
-.bg-pink {
-  background: #d45273fd;
-}
-
-.bg-yellow {
-  background: #FFB93B;
-}
-
-.theme-2 {
-  background: #ffeeee !important;
-}
-
-.theme-yellow {
-  background: #ffb93b36 !important;
-}
-
 .dashbaord-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1214,7 +1214,7 @@ footer .social-sites li a .iconify {
       flex-basis: 250px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #ffffff;
+  background: #fff;
   -webkit-box-shadow: 1px 11px 17px 0px #0000001a;
           box-shadow: 1px 11px 17px 0px #0000001a;
   z-index: 1;
@@ -1273,7 +1273,7 @@ footer .social-sites li a .iconify {
   cursor: pointer;
   height: 30px;
   width: 30px;
-  border: 2px solid #6b3bb1;
+  border: 2px solid #0D62A8;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1305,7 +1305,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .user-profile .user-name {
-  color: #6B3BB1;
+  color: #0D62A8;
   padding: 15px 0;
   text-align: center;
 }
@@ -1333,7 +1333,7 @@ footer .social-sites li a .iconify {
 
 .dashbaord-main .leftSection .sidenav::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: #703BAB;
+  background: #0D62A8;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item {
@@ -1342,29 +1342,29 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item:hover {
-  background-color: #6B3BB1;
+  background-color: #0962A8;
   border-radius: 6px;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item:hover a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item:hover a .iconify {
-  color: #ffffff;
+  color: #fff;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active {
-  background-color: #6B3BB1;
+  background: #0962A8;
   border-radius: 6px;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active a {
-  color: #ffffff;
+  color: #fff;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active a .iconify {
-  color: #ffffff;
+  color: #fff;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item {
@@ -1376,12 +1376,12 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item li a:hover {
-  background: #945dff !important;
+  background: #0064A4 !important;
   color: #fff;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item li a:hover .iconify {
-  color: #ffffff;
+  color: #fff;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item a {
@@ -1393,7 +1393,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item a .iconify {
-  color: #7c80ff;
+  color: #559ffb;
   margin-right: 8px;
 }
 
@@ -1442,7 +1442,7 @@ footer .social-sites li a .iconify {
 .dashbaord-main .rightSection .topbar .fold {
   cursor: pointer;
   font-size: 2rem;
-  color: #6B3BB1;
+  color: #0D62A8;
   display: inline-block;
 }
 
@@ -1586,31 +1586,31 @@ footer .social-sites li a .iconify {
 }
 
 .right-element .dropdown-menu .dropdown-item .iconify {
-  color: #6B3BB1;
+  color: #0D62A8;
 }
 
 .right-element .dropdown-menu .dropdown-item:hover {
-  background: #6B3BB1;
-  color: #ffffff !important;
+  background: #0D62A8;
+  color: #fff !important;
 }
 
 .right-element .dropdown-menu .dropdown-item:hover .iconify {
-  color: #ffffff;
+  color: #fff;
 }
 
 .right-element .dropdown-menu .dropdown-item:nth-child(2):hover {
   background: orangered;
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 .right-element .dropdown-menu .dropdown-item:nth-child(2):hover .iconify {
-  color: #ffffff;
+  color: #fff;
 }
 
 .profile .title-section, .wishlist .title-section {
-  background-color: #6b3bb117;
+  background-color: #eaf4fd;
   padding: 9px 16px;
-  color: #6B3BB1;
+  color: #0D62A8;
   font-weight: bold;
   text-transform: capitalize;
   font-size: 1.1rem;
@@ -1631,7 +1631,7 @@ footer .social-sites li a .iconify {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
-  background-color: #6B3BB1;
+  background-color: #0D62A8;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1639,7 +1639,7 @@ footer .social-sites li a .iconify {
 }
 
 .btn-theme:hover {
-  background-color: #7a48c2;
+  background-color: #0f73c4;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }
@@ -1704,7 +1704,7 @@ footer .social-sites li a .iconify {
 .form-custom .form-control:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  border-color: #6B3BB1;
+  border-color: #0D62A8;
 }
 
 .form-custom .form-row {
@@ -1770,7 +1770,7 @@ footer .social-sites li a .iconify {
 
 .form-custom .addProfile .profile-upload:after {
   top: 0;
-  background-color: #6b3bb1;
+  background-color: #0D62A8;
   right: 0;
   content: '\270F';
   position: absolute;
@@ -1854,12 +1854,12 @@ footer .social-sites li a .iconify {
 
 .wishlist .wishlist-area .wishliat-items .remove-product:hover {
   background-color: indianred;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
 }
 
 .wishlist .wishlist-area .wishliat-items .title {
-  color: #6b3bb1;
+  color: #0D62A8;
   text-align: center;
   margin: 9px 0;
   font-weight: bold;
@@ -1902,12 +1902,12 @@ footer .social-sites li a .iconify {
 }
 
 .pagination li a {
-  color: #6B3BB1;
+  color: #0D62A8;
 }
 
 .pagination li a.active {
-  background: #6B3BB1;
-  color: #ffffff;
+  background: #0D62A8;
+  color: #fff;
 }
 
 .table-custom {
@@ -1940,7 +1940,7 @@ footer .social-sites li a .iconify {
 }
 
 .table-custom tbody tr td a {
-  color: #6B3BB1;
+  color: #0D62A8;
 }
 
 .table-custom tbody tr:nth-child(even) {
