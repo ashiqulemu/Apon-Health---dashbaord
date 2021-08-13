@@ -1730,6 +1730,12 @@ footer .social-sites li a .iconify {
   padding: 20px;
 }
 
+@media (max-width: 768px) {
+  .form-custom .form-container {
+    padding: 5px;
+  }
+}
+
 .form-custom label {
   margin-bottom: 0.2rem;
   font-size: 15.4px;
@@ -1899,6 +1905,11 @@ footer .social-sites li a .iconify {
   color: #6B3BB1;
 }
 
+.pagination li a.active {
+  background: #6B3BB1;
+  color: #ffffff;
+}
+
 .table-custom {
   border: 1px solid #eaeaea;
   border-radius: 4px;
@@ -1945,12 +1956,16 @@ footer .social-sites li a .iconify {
 
 .wallet-status .amount {
   position: absolute;
-  top: 53%;
-  left: 17%;
+  top: 55%;
+  left: 0;
   font-size: 1.6rem;
   color: #fff;
   font-weight: bold;
-  text-shadow: 0px 2px 2px #350569;
+  text-shadow: 0px 1px 1px #350569;
+  width: 100%;
+  text-align: center;
+  padding-right: 70px;
+  line-height: 1.2;
 }
 
 .wallet-status .amount span {

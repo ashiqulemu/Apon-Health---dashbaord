@@ -1517,6 +1517,9 @@ footer {
   .form-container {
     background: #fff;
     padding: 20px;
+    @media(max-width:768px) {
+      padding: 5px;
+    }
   }
 
   label {
@@ -1675,14 +1678,18 @@ footer {
   li {
     a {
       color: $primary;
+      &.active{
+        background: $primary;
+        color: $white;
+      }
     }
   }
 }
 
-.table-custom { 
+.table-custom {
   border: 1px solid #eaeaea;
-    border-radius: 4px;
-    overflow: hidden;
+  border-radius: 4px;
+  overflow: hidden;
 
   th,
   td {
@@ -1717,26 +1724,33 @@ footer {
   }
 }
 
-.wallet-status{
-  position: relative; 
-  img{
+.wallet-status {
+  position: relative;
+
+  img {
     user-select: none;
     pointer-events: none;
   }
-  .amount{
+
+  .amount {
     position: absolute;
-    top: 53%;
-    left: 17%;
+    top: 55%;
+    left: 0;
     font-size: 1.6rem;
     color: #fff;
     font-weight: bold;
-    text-shadow: 0px 2px 2px #350569;
-    span{
+    text-shadow: 0px 1px 1px #350569;
+    width: 100%;
+    text-align: center;
+    padding-right: 70px;
+    line-height: 1.2;
+
+    span {
       font-size: 14px;
     }
   }
 }
 
-.data-container{
+.data-container {
   overflow-x: auto;
 }
