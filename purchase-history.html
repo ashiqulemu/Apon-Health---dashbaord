@@ -216,64 +216,80 @@
                 </div>
 
             </div>
-            <div class="dashboard-content"> 
-                <section class="profile">
+            <div class="dashboard-content">
+                <section class="profile purchase-status">
                     <div class="title-section">
-                        <span class="iconify" data-icon="et:wallet"></span> My Wallet
+                        <span class="iconify" data-icon="et:wallet"></span> Purchase History
                     </div>
                     <div class="infoBox mt-3">
                         <div class="row col-lg-12 mx-auto">
                             <div class="col-lg-11 mx-auto">
                                 <form class="form-custom mt-4" action="">
-                                <div class="row shadow-sm">
-                                    <div class="col-lg-4 col-md-6 bg-white border-right">                                      
-                                        <div class="form-container text-center wallet-status">
-                                            <img class="img-fluid mt-3" src="./images/images/wallet.svg" alt="">
-                                            <div class="amount">৳:350.00 <br> <span>In your wallet</span></div>
-                                           <button class=" rechrg-wallet">Recharge Wallet</button>
-                                        </div> 
-                                       
+                                    <div class="row shadow-sm">
+                                        <div class="p-0 col-md-12 bg-white">
+                                            <div class="form-container ">
+                                                <div class="overflow">
+                                                    <table class="table table-custom shadow-sm">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#Order Id</th>
+                                                                <th>date</th>
+                                                                <th>amount</th>
+                                                                <th>Delivery Status</th>
+                                                                <th>Payment Status</th>
+                                                                <th>Payment </th>
+                                                                <th>Action </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a href="#">20210807-021000</a></td>
+                                                                <td>07-08-2021</td>
+                                                                <td>৳37.00</td>
+                                                                <td>Pending</td>
+                                                                <td>
+                                                                    <div class="unpaid">unpaid</div>
+                                                                </td>
+                                                                <td><button class="pay-now">pay now</button></td>
+                                                                <td>
+                                                                    <div class="action">
+                                                                        <span onclick="alert()" title="Order Details"
+                                                                            class="iconify"
+                                                                            data-icon="icon-park-outline:transaction-order"></span>
+                                                                        <span onclick="alert()" title="Download Invoice"
+                                                                            class="iconify"
+                                                                            data-icon="carbon:download-study"></span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#">20210807-021000</a></td>
+                                                                <td>07-08-2021</td>
+                                                                <td>৳37.00</td>
+                                                                <td>Pending</td>
+                                                                <td>
+                                                                    <div class="paid">paid</div>
+                                                                </td>
+                                                                <td><button class="pay-now">pay now</button></td>
+                                                                <td>
+                                                                    <div class="action">
+                                                                        <span onclick="alert()"  data-toggle="tooltip" data-placement="top" title="Tooltip on top"
+                                                                            class="iconify"
+                                                                            data-icon="icon-park-outline:transaction-order"></span>
+                                                                        <span onclick="alert()" title="Download Invoice"
+                                                                            class="iconify"
+                                                                            data-icon="carbon:download-study"></span> 
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-8 col-md-6 bg-white"> 
-                                           <div class="form-container pt-5">
-                                               <div style="overflow-x: auto;">
-                                            <table class="table table-custom shadow-sm">
-                                                <thead>
-                                                    <tr>
-                                                        <th>#Sl</th>
-                                                        <th>date</th>
-                                                        <th>amount</th>
-                                                        <th>method</th> 
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>12-08-2021</td>
-                                                        <td>$500</td>
-                                                        <td>Bank</td> 
-                                            
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>12-08-2021</td>
-                                                        <td>$500</td>
-                                                        <td>Bank</td>  
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>12-08-2021</td>
-                                                        <td>$500</td>
-                                                        <td>Bank</td>  
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            </div> 
-                                                  
-                                           </div>                                      
-                                    </div>
-                                </div>
-                            </form>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -392,6 +408,11 @@
     <script src="./js/iconify.min.js"></script>
     <!-- <script src="./js/swiper-bundle.min.js"></script> -->
     <script src='./js/app.js'> </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
     <!-- <script src="./js/slick.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper-container', {

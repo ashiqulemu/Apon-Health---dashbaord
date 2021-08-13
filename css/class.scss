@@ -7,6 +7,10 @@
   $pink:#d45273fd;
   $yellow:#FFB93B;
 
+  @mixin transition($sec) {
+    transition:all $sec ease-in-out;
+  }
+
   .theme-primary {
       background-color: $primary !important;
   }

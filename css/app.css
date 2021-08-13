@@ -1938,6 +1938,10 @@ footer .social-sites li a .iconify {
   font-size: 14px;
 }
 
+.table-custom tbody tr td a {
+  color: #6B3BB1;
+}
+
 .table-custom tbody tr:nth-child(even) {
   background: #f7f4ff;
 }
@@ -1956,7 +1960,7 @@ footer .social-sites li a .iconify {
 
 .wallet-status .amount {
   position: absolute;
-  top: 55%;
+  top: 58%;
   left: 0;
   font-size: 1.6rem;
   color: #fff;
@@ -1974,11 +1978,110 @@ footer .social-sites li a .iconify {
 
 .wallet-status .rechrg-wallet {
   position: absolute;
-  top: 23px;
-  right: 4px;
+  top: 17px;
+  right: -1px;
+  border: 0;
+  font-size: 12px;
+  padding: 5px 10px;
+  background: #8db932;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.wallet-status .rechrg-wallet:hover {
+  background: #99c93a;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .data-container {
   overflow-x: auto;
+}
+
+.purchase-status .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.purchase-status .action .iconify {
+  cursor: pointer;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  margin: 0 3px;
+}
+
+.purchase-status .action .iconify:first-child {
+  color: #6348f6;
+}
+
+.purchase-status .action .iconify:last-child {
+  color: #63ae45;
+}
+
+.purchase-status .action .iconify:hover {
+  opacity: 1;
+}
+
+.purchase-status .unpaid {
+  background: #ec6f7b;
+  padding: 4px 6px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 13px;
+  width: 55px;
+  text-align: center;
+  display: inline-block;
+}
+
+.purchase-status .paid {
+  background: #1bd445;
+  padding: 4px 6px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 13px;
+  width: 55px;
+  text-align: center;
+  display: inline-block;
+}
+
+.purchase-status .pay-now {
+  background: #ecb40c;
+  padding: 4px 6px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 13px;
+  text-align: center;
+  display: inline-block;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.purchase-status .pay-now:hover {
+  background: #ffc415;
+}
+
+@media (max-width: 600px) {
+  .overflow {
+    overflow-x: auto;
+    width: 555px;
+  }
+}
+
+@media (max-width: 425px) {
+  .overflow {
+    overflow-x: auto;
+    width: 400px;
+  }
 }
 /*# sourceMappingURL=app.css.map */
