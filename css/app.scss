@@ -1834,16 +1834,23 @@ footer {
     }
   }
 }
-
+ 
 .overflow{ 
   @media(max-width:600px){
     overflow-x: auto;
     width: 555px;
   }
-}
-.overflow{ 
   @media(max-width:425px){
     overflow-x: auto;
     width: 400px;
   }
+  @media(max-width:375px){
+    overflow-x: auto;
+    width: 334px;
+  }
+  @media(max-width:320px){
+    overflow-x: auto;
+    width:280px;
+  }
+  
 }

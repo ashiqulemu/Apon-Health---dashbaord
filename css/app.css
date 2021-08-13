@@ -2084,4 +2084,18 @@ footer .social-sites li a .iconify {
     width: 400px;
   }
 }
+
+@media (max-width: 375px) {
+  .overflow {
+    overflow-x: auto;
+    width: 334px;
+  }
+}
+
+@media (max-width: 320px) {
+  .overflow {
+    overflow-x: auto;
+    width: 280px;
+  }
+}
 /*# sourceMappingURL=app.css.map */
