@@ -2109,7 +2109,7 @@ footer .social-sites li a .iconify {
 @media (max-width: 425px) {
   .overflow {
     overflow-x: auto;
-    width: 400px;
+    width: 393px;
   }
 }
 
@@ -2125,5 +2125,186 @@ footer .social-sites li a .iconify {
     overflow-x: auto;
     width: 280px;
   }
+}
+
+.cart {
+  padding: 25px 0;
+  background: #ECECEC;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    padding: 10px 0;
+  }
+}
+
+.cart .inner {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  background: #fff;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .cart .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
+.cart .inner .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.cart .inner .right {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  border: 1px solid #ececec;
+}
+
+@media (max-width: 768px) {
+  .cart .inner .right {
+    -ms-flex-preferred-size: unset;
+        flex-basis: unset;
+  }
+}
+
+.cart .inner .right .cartDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.cart .inner .right .cartDetails .title {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #eaecf9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.cart .inner .right .cartDetails .title h5 {
+  margin-bottom: 0;
+}
+
+.cart .inner .right .cartDetails .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px dashed lightgrey;
+  padding: 7px 10;
+}
+
+.cart .inner .right .cartDetails .product-list {
+  padding: 6px 0;
+}
+
+.cart .inner .right .cartDetails .product-list .product {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart .inner .right .cartDetails .product-list .product:nth-child(even) {
+  background: #F7F4FE;
+}
+
+.cart .inner .right .cartDetails .product-list .product .price {
+  border: 0;
+}
+
+.cart .inner .right .cartDetails .product-list .product .name {
+  color: #0D62A8;
+  padding-left: 10px;
+}
+
+.cart .inner .right .cartDetails .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px dashed #d2d2d2;
+  padding: 7px 10px;
+  font-size: 14px !important;
+}
+
+.curp {
+  cursor: pointer;
+}
+
+.product-quantity {
+  border-radius: 12px;
+  background: #2a62a8;
+  width: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.product-quantity button {
+  width: 26px;
+  border: 0;
+  outline: 0;
+  background: #2a62a8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.product-quantity input[type='number'] {
+  width: 38px;
+  padding: 3px;
+  outline: 0;
+  text-align: center;
+}
+
+.product-quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 /*# sourceMappingURL=app.css.map */

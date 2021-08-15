@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apon Health</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- header section -->
+    <section class="header shadow-sm mb-1">
+        <div class="container ">
+            <div class="header-portion">
+                <form action="" class='inner-box'>
+                    <div class="brand">
+                        <a href="">
+                            <img src="/images/logo.png " class="img-fluid" alt="Apon Health">
+                        </a>
+                        <select class='cat-mobile'>
+                            <option value="" selected="selected">Choose a Category </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                        </select>
+                    </div>
+                    <div class="category">
+                        <select name="" id="" class="form-control">
+                            <option value="" selected>choose category...</option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                            <option value="">choose category 1 </option>
+                        </select>
+                    </div>
+                    <div class="search ">
+                        <div class="searchArea">
+                            <div class="search-box">
+                                <input type="search" class="form-control medicineSearch"
+                                    placeholder="Search for medicine ">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="buttons_link">
+                    <img src="./images/images/upload.png" class="img-fluid">
+                    <img src="./images/images/member.png" class="img-fluid">
+                </div>
+                <div class="links">
+                    <a href=""><img src="./images//images/Screenshot_1.png"></a>
+                    <a href=""><img src="./images//images/discount_home.png"></a>
+                    <a href="">
+                        <img src="./images//images/shopping-cart.png">
+                        <div class="cartitem">
+                            99
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobileSearch">
+        <div class="container">
+            <div class="mobileSearchArea">
+
+                <input type="search" class="form-control" placeholder="search for medicine">
+                <div class="mobile-menu-icon" onclick="collapsMenu()">
+                    <span class="iconify" data-icon="gg:menu" data-inline="false"></span>
+                </div>
+                <div class="menu-content" id='mobileMenu'>
+                    <div class="profile">
+                        <img src="/images/images/user.png" alt="">
+                        <h6>John Landish</h6>
+                    </div>
+                    <div class="cash">
+                        <p>
+                            Cash: 120 Tk <br>
+                            Pending : 120 Tk
+                        </p>
+                    </div>
+                    <div class="menuItems">
+                        <ul>
+                            <li><a href="">My Profile</a></li>
+                            <li><a href="">My order</a></li>
+                            <li><a href="">Gift your friend</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="close" onclick="closeMenu()"><span class="iconify" data-icon="eva:close-circle-fill"
+                            data-inline="false"></span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- cart -->
+
+    <section class="cart">
+        <div class="inner">
+            <div class="left">
+                <div class="overflow">
+                    <table class="table table-custom shadow-sm">
+                        <thead>
+                            <tr>
+                                <th> </th>
+                                <th>Product Name</th>
+                                <th>Price</th>
+                                <th>quantity</th>
+                                <th>Total</th>
+                                <th class="text-center">Cancel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img width="45px"
+                                        src="https://aponhealth.com/uploads/products/thumbnail/bQADpra08HQxU6E1gT9QbipjY0GHJyvHad45i5Eh.jpg"
+                                        alt=""> </td>
+                                <td>Napa rapid</td>
+                                <td><input readonly id="product_price" style="border:0; outline:0;" value="2"/> </td>
+                                <td>
+                                    <div class="product-quantity">
+                                        <button onclick="decrementQty();">-</button>
+                                        <input id="quantity" min="1" type="number" value="1">
+                                        <button onclick="increamntQty();">+</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="product_total_price">
+ 0
+                                    </div>
+                                </td>
+                                <td class="text-center"><span title="Remove this product" onclick="alert()"
+                                        class="iconify curp" data-icon="emojione:cross-mark-button"></span></td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+                <div class="well align-items-center mt-3 d-flex flex-wrap justify-content-between">
+                   <div><a href="#">Back to Home </a></div>
+                   <div><a href=" " class="btn-theme text-white">Continue to Shipping</a></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="cartDetails mb-3">
+                    <div class="title py-2">                        
+                        <div class="font-weight-bold pl-1"><span class="iconify" data-icon="bx:bxs-cart-download"></span> Cart Details </div>
+                        <div class="badge badge-primary">Total: 2 Items  </div>
+                    </div>
+                    <div class="heading">
+                        <span>Product Name</span>
+                        <span>Price</span>
+                    </div>
+                    <div class="product-list">
+                        <div class="product font-weight-bold">
+                            <div class="name">Napa</div>
+                            <div class="price">2.00</div>
+                        </div>
+                        <div class="product font-weight-bold">
+                            <div class="name">Desprine</div>
+                            <div class="price">2.00</div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="price">
+                        <div> SUBTOTAL</div>
+                        <div> 4.00</div>
+                    </div>
+                    <div class="price">
+                        <div>tax</div>
+                        <div> 4.00</div>
+                    </div>
+                    <div class="price">
+                        <div> total shipping</div>
+                        <div> 4.00</div>
+                    </div>
+                    <div class="price">
+                        <div class=" font-weight-bold"> TOTAL</div>
+                        <div class=" font-weight-bold"> 4.00</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer class="py-3 ">
+        <div class="container">
+            <div class="my-4">
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">INFORMATION</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/account">Account</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/about-us">About Us</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/privacy.html">Privacy Policy</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/tos.html">Terms and Conditions</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">USEFUL LINKS</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item py-1"><a class="text-white" href="https://www.rabibar.com/faq">FAQ</a>
+                            </li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/addresses">Addresses</a></li>
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/brands">Medicines</a></li>
+
+                            <li class="nav-item py-1"><a class="text-white"
+                                    href="https://www.rabibar.com/offers">Special Offers</a></li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <!-- End Nav Link -->
+                        <div id="contact">
+                            <h5 class="text-white">CONTACT US</h5>
+                            <div class="text-white">
+                                <span class="iconify" data-icon="dashicons:phone" data-inline="false"></span>
+                                01886335834
+                            </div>
+                            <ul class="list-inline mb-0 mt-3 social-sites">
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="ant-design:facebook-filled"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:twitter-square"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="text-white" href="">
+                                        <span class="iconify" data-icon="fa-brands:instagram-square"
+                                            data-inline="false"></span>
+                                    </a>
+                                </li>
+                                <!-- End Social Networks -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
+                        <h5 class="text-white">OUR APP</h5>
+                        <!-- Nav Link -->
+                        <ul class="nav nav-sm nav-x-0 nav-white flex-column">
+                            <li class="nav-item w-100">
+                                <a class="py-1 d-block app_download_link" href=" ">
+                                    <img loading="lazy" class='img-fluid'
+                                        src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="py-1 d-block app_download_link" href=" "><img class='img-fluid' loading="lazy"
+                                        src="./images/images/apple_store.png"></a>
+                            </li>
+                        </ul>
+                        <!-- End Nav Link -->
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="background:rgba(255,255,255,0.5)">
+            <div class="space-1">
+                <!-- Copyright -->
+                <div class="text-lg-center mx-lg-auto">
+                    <p class="text-white small">© 2021 Apon Health Limited. All rights reserved.</p>
+                </div>
+                <!-- End Copyright -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/iconify.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+
+    <script src='./js/app.js'> </script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
