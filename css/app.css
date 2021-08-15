@@ -1616,6 +1616,26 @@ footer .social-sites li a .iconify {
   font-size: 1.1rem;
 }
 
+.title-section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eaf4fd;
+  padding: 9px 16px;
+  color: #0D62A8;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.title-section .btn-theme {
+  font-size: 12px;
+}
+
 .btn-theme {
   display: inline-block;
   font-weight: 400;
@@ -1961,7 +1981,7 @@ footer .social-sites li a .iconify {
 
 .wallet-status .amount {
   position: absolute;
-  top: 58%;
+  top: 62%;
   left: 0;
   font-size: 1.6rem;
   color: #fff;
@@ -1979,22 +1999,29 @@ footer .social-sites li a .iconify {
 
 .wallet-status .rechrg-wallet {
   position: absolute;
-  top: 17px;
-  right: -1px;
+  top: 22px;
+  right: 4px;
   border: 0;
-  font-size: 12px;
-  padding: 5px 10px;
-  background: #8db932;
+  font-size: 15px;
+  padding: 6px 15px;
+  background: #0e85e6;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+  border-radius: 30px;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 3px 1px #154279;
+          box-shadow: 0px 3px 1px #154279;
+}
+
+.wallet-status .rechrg-wallet .iconify {
+  font-size: 1.2rem;
 }
 
 .wallet-status .rechrg-wallet:hover {
-  background: #99c93a;
+  background: #006fca;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
 }

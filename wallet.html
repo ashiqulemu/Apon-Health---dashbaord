@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/slick.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css"/> 
 </head>
 
 <body>
@@ -228,9 +229,14 @@
                                 <div class="row shadow-sm">
                                     <div class="col-lg-4 col-md-6 bg-white border-right">                                      
                                         <div class="form-container text-center wallet-status">
-                                            <img class="img-fluid mt-3" src="./images/images/wallet.svg" alt="">
+                                            <img class="img-fluid mt-5 " src="./images/images/wallet.svg" alt="">
                                             <div class="amount">৳:350.00 <br> <span>In your wallet</span></div>
-                                           <button class=" rechrg-wallet">Recharge Wallet</button>
+
+                                         <button class=" rechrg-wallet wow pulse" data-wow-duration="1s" data-wow-iteration="100" >
+                                            <span class="iconify" data-icon="tabler:currency-taka"></span>
+                                            Recharge Wallet
+                                        </button>
+
                                         </div> 
                                        
                                     </div>
@@ -390,114 +396,12 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/iconify.min.js"></script>
-    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
+    <script src="./js/wow.min.js"></script>
+
     <script src='./js/app.js'> </script>
-    <!-- <script src="./js/slick.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            autoplay: {
-                delay: 5000,
-            },
-            loop: true,
-            effect: 'fade',
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-
-            },
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        $('.slider').slick({
-            arrows: true,
-            infinite: true,
-            slidesToShow: 3,
-            accessibility: true,
-            autoplay: false,
-            autoplaySpeed: 3000,
-            prevArrow: "<span class='arrow prev'><i class='fas fa-angle-left'></i></span>",
-            nextArrow: "<span class='arrow next'><i class='fas fa-angle-right'></i></span>",
-            customPaging: function (slider, i) {
-                /* ADDING CUSTOM PAGING
-                 Example
-                 return  return '<li>Something you want to insert</li>';
-         */
-            },
-            responsive: [
-                {
-                    breakpoint: 1920,
-                    settings: {
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        // dots: true
-                    }
-                },
-                {
-                    breakpoint: 1440,
-                    settings: {
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        // dots: true
-                    }
-                },
-                {
-                    breakpoint: 1025,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        // dots: true
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 425,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 375,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-
-            ]
-        });
-    </script> -->
+        new WOW().init(); 
+    </script>
 
 </body>
 

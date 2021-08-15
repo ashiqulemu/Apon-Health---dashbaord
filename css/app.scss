@@ -1428,7 +1428,20 @@ footer {
     font-size: 1.1rem;
   }
 }
-
+.title-section {
+  align-items: center;
+  background-color: lighten($primary,60%);
+   padding: 9px 16px;
+  color: #0D62A8;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  display: flex;
+  width: 100%;
+  .btn-theme{
+    font-size: 12px; 
+  }
+}
 
 
 .btn-theme {
@@ -1738,7 +1751,7 @@ footer {
 
   .amount {
     position: absolute;
-    top: 58%;
+    top: 62%;
     left: 0;
     font-size: 1.6rem;
     color: #fff;
@@ -1755,19 +1768,25 @@ footer {
   }
   .rechrg-wallet{
     position: absolute;
-    top: 17px;
-    right: -1px;
+    top: 22px;
+    right: 4px;
     border: 0;
-    font-size: 12px;
-    padding: 5px 10px;
-    background: #8db932;
+    font-size: 15px;
+    padding: 6px 15px;
+    background:#0e85e6;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
+    border-radius: 30px;
     outline: 0;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 1px #154279;
+    .iconify{
+      font-size: 1.2rem;
+    }
     &:hover{
-      background:#99c93a;
+      background:#006fca;
       transform: translateY(-3px);
     }
   }
