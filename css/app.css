@@ -2117,6 +2117,16 @@ footer .social-sites li a .iconify {
   background: #ffc415;
 }
 
+.overflow::-webkit-scrollbar {
+  background-color: #E5EAFD;
+  height: 5px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #0D62A8;
+}
+
 @media (min-width: 501px) and (max-width: 590px) {
   .overflow {
     overflow-x: auto;
@@ -2175,13 +2185,16 @@ footer .social-sites li a .iconify {
   padding: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .cart .inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     width: 100%;
+  }
+  .cart .inner .right {
+    margin-bottom: 10px;
   }
 }
 

@@ -1881,8 +1881,20 @@ footer {
     background: #ffc415;
   }
 }
+  .payment-area{ 
+    
+  }
 
 .overflow {
+  &::-webkit-scrollbar {
+    background-color: #E5EAFD; 
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: $primary;
+  }
   @media(min-width:501px) and (max-width:590px) {
     overflow-x: auto;
     width: 545px;
@@ -1925,9 +1937,12 @@ footer {
     background: #fff;
     padding: 16px;
 
-    @media(max-width:768px) {
+    @media(max-width:960px) {
       flex-direction: column-reverse;
       width: 100%;
+      .right{
+        margin-bottom: 10px;
+      }
     }
 
     .left {
