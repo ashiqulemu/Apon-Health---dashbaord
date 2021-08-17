@@ -1326,6 +1326,12 @@ footer .social-sites li a .iconify {
   overflow-y: auto;
 }
 
+@media (max-width: 768px) {
+  .dashbaord-main .leftSection .sidenav {
+    padding-bottom: 80px;
+  }
+}
+
 .dashbaord-main .leftSection .sidenav::-webkit-scrollbar {
   background-color: #E5EAFD;
   width: 4px;

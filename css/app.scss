@@ -1149,6 +1149,10 @@ footer {
       height: 85vh;
       overflow-y: auto;
 
+      @media (max-width:768px) {
+        padding-bottom:80px;
+      }
+
       &::-webkit-scrollbar {
         background-color: #E5EAFD;
         width: 4px;
