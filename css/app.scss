@@ -1150,7 +1150,7 @@ footer {
       overflow-y: auto;
 
       @media (max-width:768px) {
-        padding-bottom:80px;
+        padding-bottom: 80px;
       }
 
       &::-webkit-scrollbar {
@@ -1289,7 +1289,7 @@ footer {
         padding: 15px;
 
         @media(max-width:768px) {
-          padding:0 5px; 
+          padding: 0 5px;
         }
 
         .cols {
@@ -1307,9 +1307,11 @@ footer {
             padding: 15px;
             border: 0;
             transition: all 0.3s ease-in-out;
+
             @media(max-width:768px) {
               margin-bottom: 10px;
             }
+
             &:hover {
               box-shadow: 0 10px 40px #0003;
               transform: translateY(-5px);
@@ -1881,13 +1883,111 @@ footer {
     background: #ffc415;
   }
 }
-  .payment-area{ 
-    
+
+.payment-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  column-gap: 10px;
+  flex-wrap: wrap;
+
+  .items {
+    flex: 1;
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    box-shadow: -1px 1rem 1rem #6a758026;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    min-width: 160px;
+    &:after{
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: #334169e8;
+    }
+
+    &.mobileBanking{
+      background: url('../images//images/payments.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &.ssl{
+      background: url('../images//images/payments.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &.wallet{
+      background: url('../images//images/payments.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .payment-method-item {
+      width: 0;
+    }
+
+    .payment-method-item:checked + label {
+      color: #04ec00!important;
+      margin-top: 28px;
+      transition: all 0.4s ease-in;
+      &::after{
+        content:url('../images/images/ok.png');
+        height: 50px;
+        width: 50px;
+        background: white;
+        position: absolute;
+        top: 18px;
+        border-radius: 50%;
+        background-size: contain;
+      }
+    }
+
+    .payment-method-item:checked::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      background: #0062cc;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+    }
+
+    label {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-bottom: 0;
+      color: white;
+      font-size: 20px;
+      line-height: 1.1;
+      text-align: center;
+      z-index: 3; 
+    }
   }
+}
 
 .overflow {
   &::-webkit-scrollbar {
-    background-color: #E5EAFD; 
+    background-color: #E5EAFD;
     height: 5px;
   }
 
@@ -1895,10 +1995,12 @@ footer {
     border-radius: 50px;
     background: $primary;
   }
+
   @media(min-width:501px) and (max-width:590px) {
     overflow-x: auto;
     width: 545px;
   }
+
   @media(max-width:500px) {
     overflow-x: auto;
     width: 456px;
@@ -1940,7 +2042,8 @@ footer {
     @media(max-width:960px) {
       flex-direction: column-reverse;
       width: 100%;
-      .right{
+
+      .right {
         margin-bottom: 10px;
       }
     }
