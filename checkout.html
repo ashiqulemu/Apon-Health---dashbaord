@@ -105,197 +105,138 @@
 
         </div>
     </section>
-    <!-- dashboard  section -->
-    <div class="dashbaord-main">
-        <div class="leftSection wow fadeIn" data-wow-delay=".25s" id='leftSidebar'>
-            <!-- <div class="brand">
-                <img src="images/logo.png" alt="">
-            </div> -->
-            <div class="user-profile">
-                <div class="close-dashboard-sidebar">
-                    <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
-                </div>
-                <img src="images/profile.png" alt="">
-                <p class='user-name mb-0'>
-                    <span>John</span>
-                    <span>Landish</span>
-                </p>
-            </div>
-            <nav class="sidenav">
-                <ul>
-                    <li class="nav-item active">
-                        <a href="index.html">
-                            <span class="iconify" data-icon="clarity:dashboard-solid-badged"></span>
-                            Dashboard
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="purchase-history.html">
-                            <span class="iconify" data-icon="raphael:history"></span>
-                            Purchase History
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="wishlist.html">
-                            <span class="iconify" data-icon="clarity:heart-solid"></span>
-                            Wishlist
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="profile.html">
-                            <span class="iconify" data-icon="icomoon-free:profile"></span>
-                            Manage Profile
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="wallet.html">
-                            <span class="iconify" data-icon="fontisto:wallet"></span>
-                            My Wallet
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="upload-prescription.html">
-                            <span class="iconify" data-icon="fluent:note-add-16-filled"></span>
-                            Upload Prescription
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#">
-                            <span class="iconify" data-icon="bpmn:end-event-message"></span>
-                            Request Message
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#">
-                            <span class="iconify" data-icon="ic:outline-medication"></span>
-                            Add Medication
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="change-password.html">
-                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
-                            Change Password
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="cart.html">
-                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
-                            cart
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="payment.html">
-                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
-                           Payment Methods
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="checkout.html">
-                            <span class="iconify" data-icon="ri:lock-password-fill"></span>
-                           Shipping Info
-                        </a>
-                    </li>  
-                </ul>
-            </nav>
-        </div>
-        <div class="rightSection">
-            <div class="topbar">
-                <div class="fold" onclick='foldSidebar();'>
-                    <span class="iconify" data-icon="eva:menu-fill"></span>
-                </div>
-                <!-- <img src="images/logo.png" class="mobile-menu-logo"> -->
-                <div class="right-element">
-                    <div class="dropdown show">
-                        <a class="btn  dropdown-toggle  profile-manage" href="#" role="button" id="dropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="./images/profile.png">
-                        </a>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#"><span class="iconify"
-                                    data-icon="carbon:user-avatar"></span> Profile</a>
-                            <a class="dropdown-item" href="#"><span class="iconify"
-                                    data-icon="ion:log-out-outline"></span> Log Out</a>
+    <!-- cart -->
+
+    <section class="cart">
+        <div class="inner">
+            <div class="left px-3 py-1">
+                <form class="form-custom" action="">
+
+                    <div class="row">
+                        <div class="title-section w-100 justify-content-between flex-wrap">
+                            <span>Shipping Info</span>
+                            <div>
+                                <a class="btn-theme bg-primary text-white">New Shipping Address</a>
+                                <a class="btn-theme bg-info text-white">Edit Shipping Address</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="dashboard-content">
-                <div class="rows">
-
-                    <div class="cols">
-                        <div class="card">
-                            <div data-wow-delay=".25s" class="wow fadeIn box text-center theme-1 p-3 ">
-                                <span class="iconify bg-violet" data-icon="mdi-light:cart"></span>
-                                <div class="inner theme-txt-violet">
-                                    <h1 class="my-0 ">05</h1>
-                                    <h5 class="my-0 ">Products in Your cart </h5>
+                        <div class="col-lg-12 bg-white  shadow-sm">
+                            <div class="form-container py-4">
+                                <div class="form-group">
+                                    <label>Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Full name here ">
                                 </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" placeholder="Email here">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone Number</label>
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Region</label>
+                                        <select class="form-control" name="" id="">
+                                            <option value="">values</option>
+                                            <option value="">values</option>
+                                            <option value="">values</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>City</label>
+                                       <select class="form-control" name="" id="">
+                                           <option value="">values</option>
+                                           <option value="">values</option>
+                                           <option value="">values</option>
+                                       </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Area</label>
+                                        <select class="form-control" name="" id="">
+                                            <option value="">values</option>
+                                            <option value="">values</option>
+                                            <option value="">values</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Shipping Cost</label>
+                                        <input type="number" class="form-control" value="100">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Postal Code</label>
+                                        <input type="text" class="form-control"  placeholder="Postal Code">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Label</label>
+                                        <input type="text" class="form-control" placeholder="Label" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <textarea class="form-control" placeholder="Address here " cols="10" rows="2"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Upload Your Prescription</label>
+                                    <textarea class="form-control" placeholder="Address here " cols="10" rows="2"></textarea>
+                                </div>
+                                <button type="submit" class="text-white btn-theme float-right mb-3">Update Shipping Info
+                                </button>
+
                             </div>
                         </div>
                     </div>
-                    <div class="cols">
-                        <div class="card">
-                            <div data-wow-delay=".30s" class="wow fadeIn box text-center theme-2 p-3 ">
-                                <span class="iconify bg-pink" data-icon="ei:heart"></span>
-                                <div class="inner theme-txt-pink">
-                                    <h1 class="my-0 ">04</h1>
-                                    <h5 class="my-0 ">in your wishlist </h5>
-                                </div>
-                            </div>
+                </form>
+
+            </div>
+            <div class="right">
+                <div class="cartDetails mb-3">
+                    <div class="title py-2">
+                        <div class="font-weight-bold pl-1"><span class="iconify"
+                                data-icon="bx:bxs-cart-download"></span> Cart Details </div>
+                        <div class="badge badge-primary">Total: 2 Items </div>
+                    </div>
+                    <div class="heading">
+                        <span>Product Name</span>
+                        <span>Price</span>
+                    </div>
+                    <div class="product-list">
+                        <div class="product font-weight-bold">
+                            <div class="name">Napa</div>
+                            <div class="price">2.00</div>
+                        </div>
+                        <div class="product font-weight-bold">
+                            <div class="name">Desprine</div>
+                            <div class="price">2.00</div>
                         </div>
                     </div>
-                    <div class="cols">
-                        <div class="card">
-                            <div data-wow-delay=".35s" class="wow fadeIn box text-center theme-yellow p-3 ">
-                                <span class="iconify bg-yellow" data-icon="healthicons:i-note-action-outline"></span>
-                                <div class="inner theme-txt-yellow">
-                                    <h1 class="my-0 ">09</h1>
-                                    <h5 class="my-0">you ordered </h5>
-                                </div>
-                            </div>
-                        </div>
+                    <hr>
+                    <div class="price">
+                        <div> SUBTOTAL</div>
+                        <div> 4.00</div>
                     </div>
-
-
-
-
-                </div>
-                <div class="rows ">
-                    <div class="title-section w-100 justify-content-between flex-wrap">
-                         <span>Your Shipping Infos</span>
-                         <a class="btn-theme text-white">Edit</a>
+                    <div class="price">
+                        <div>tax</div>
+                        <div> 4.00</div>
                     </div>
-                    <div class="form-container w-100">
-                        <div class="overflow">
-                            <table class="table table-custom shadow-sm">
-                                <thead>
-                                    <tr>
-                                        <th>Address</th>
-                                        <th>city</th>
-                                        <th>country</th>
-                                        <th>Postal code</th>
-                                        <th>Phone</th>                                       
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td> Abdul karim road </td>
-                                        <td>Jashore</td>
-                                        <td>Bangladesh</td>
-                                        <td>7400</td>
-                                        <td>01723096437</td> 
-                                    </tr> 
-                                </tbody>
-                            </table>
-                        </div>
-
+                    <div class="price">
+                        <div> total shipping</div>
+                        <div> 4.00</div>
+                    </div>
+                    <div class="price">
+                        <div class=" font-weight-bold"> TOTAL</div>
+                        <div class=" font-weight-bold"> 4.00</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+    </section>
 
     <!-- footer  -->
 
