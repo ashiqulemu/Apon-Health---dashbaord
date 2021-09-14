@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apon Health</title>
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -13,7 +12,6 @@
 </head>
 
 <body>
-
     <!-- header section -->
     <section class="header shadow-sm mb-1">
         <div class="container ">
@@ -56,8 +54,8 @@
                     <img src="./images/images/member.png" class="img-fluid">
                 </div>
                 <div class="links">
-                    <a href=""><img src="./images/images/Screenshot_1.png"></a>
-                    <a href=""><img src="./images/images/discount_home.png"></a>
+                    <a href=""><img src="./images//images/Screenshot_1.png"></a>
+                    <a href=""><img src="./images//images/discount_home.png"></a>
                     <a href="">
                         <img src="./images//images/shopping-cart.png">
                         <div class="cartitem">
@@ -223,76 +221,164 @@
 
             </div>
             <div class="dashboard-content">
-                <section class="profile purchase-status">
+
+                <section class="profile">
                     <div class="title-section">
-                        <span class="iconify mr-1" data-icon="et:wallet"></span>  Purchase History
+                        <span class="iconify mr-1" data-icon="fontisto:prescription"></span> Add Medication
                     </div>
                     <div class="infoBox mt-3">
                         <div class="row col-lg-12 mx-auto">
-                            <div class="col-lg-11 mx-auto">
+                            <div class="col-lg-10 mx-auto">
                                 <form class="form-custom mt-4" action="">
                                     <div class="row shadow-sm">
-                                        <div class="p-0 col-md-12 bg-white">
-                                            <div class="form-container ">
+                                        <div class="col-lg-6 col-md-6 bg-white border-right">
+                                            <div class="form-container  ">
+                                                <div class="form-group mb-1">
+                                                    <label>User Name</label>
+                                                    <input type="text" class="form-control" placeholder="User name">
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group mb-1">
+                                                        <label>Email</label>
+                                                        <input type="Email" class="form-control"
+                                                            placeholder="User email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group mb-1">
+                                                        <label>Phone No</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Phone number">
+                                                    </div>
+                                                    <div class="form-group mb-1">
+                                                        <label>Postal Code</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Postal code">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group mb-1">
+                                                        <label>Address</label>
+                                                        <textarea class="form-control" rows="2"
+                                                            placeholder="Address here ..."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 bg-white">
+                                            <div class="form-container pt-5">
+                                                <table>
+                                                    <tr>
+                                                        <td class="w-50"><small>Invoice #</small></td>
+                                                        <td class="w-50">
+                                                            <input type="text" class="px-1 py-1 mb-3 form-control"
+                                                                value="20210914-083544" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-50"><small>Delivery Date</small></td>
+                                                        <td class="w-50"><input type="date" class="form-control mb-3"
+                                                                id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-50"><small>Medication Period</small></td>
+                                                        <td class="w-50">
+                                                            <select class="form-control mb-3">
+                                                                <option value="">7 days </option>
+                                                                <option value="">7 days </option>
+                                                                <option value="">7 days </option>
+                                                                <option value="">7 days </option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="w-50">
+                                                            <small>Amount Due</small>
+                                                        </td>
+                                                        <td class="w-50 text-right">
+                                                            <input type="text" class="px-1 py-1 form-control mb-3"
+                                                                value="150" readonly />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- <button type="submit"  class="text-white btn-theme float-right mb-3">Update Password
+                                                </button> -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12 mx-auto">
+                            <div class="col-lg-10 mx-auto">
+                                <form class="form-custom " action="">
+                                    <div class="row shadow-sm">
+                                        <div class=" col-md-12 bg-white p-0">
+                                            <div class="form-container">
                                                 <div class="overflow">
                                                     <table class="table table-custom shadow-sm">
                                                         <thead>
                                                             <tr>
-                                                                <th>#Order Id</th>
-                                                                <th>date</th>
-                                                                <th>amount</th>
-                                                                <th>Delivery Status</th>
-                                                                <th>Payment Status</th>
-                                                                <th>Payment </th>
-                                                                <th>Action </th>
+                                                                <th>Item</th>
+                                                                <th>Unit Cost</th>
+                                                                <th>Quantity </th>
+                                                                <th>Price</th>
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody id="inner">
                                                             <tr>
-                                                                <td><a href="#">20210807-021000</a></td>
-                                                                <td>07-08-2021</td>
-                                                                <td>৳37.00</td>
-                                                                <td>Pending</td>
-                                                                <td>
-                                                                    <div class="unpaid">unpaid</div>
+                                                                <td width="200px">
+                                                                    <select name="" class="form-control">
+                                                                        <option value="">napa</option>
+                                                                        <option value="">napa</option>
+                                                                        <option value="">napa</option>
+                                                                    </select>
                                                                 </td>
-                                                                <td><button class="pay-now">pay now</button></td>
+                                                                <td style="width:95px;">
+                                                                    <input type="text" class="form-control" value="150">
+                                                                </td>
                                                                 <td>
-                                                                    <div class="action">
-                                                                        <span onclick="alert()" title="Order Details"
-                                                                            class="iconify"
-                                                                            data-icon="icon-park-outline:transaction-order"></span>
-                                                                        <span onclick="alert()" title="Download Invoice"
-                                                                            class="iconify"
-                                                                            data-icon="carbon:download-study"></span>
-                                                                    </div>
+                                                                    <input style="min-width: 50px;" type="text"
+                                                                        class="form-control" value="6">
+                                                                </td>
+                                                                <td style="width:85px;">
+                                                                    <span>150</span>
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="#">20210807-021000</a></td>
-                                                                <td>07-08-2021</td>
-                                                                <td>৳37.00</td>
-                                                                <td>Pending</td>
-                                                                <td>
-                                                                    <div class="paid">paid</div>
-                                                                </td>
-                                                                <td><button class="pay-now">pay now</button></td>
-                                                                <td>
-                                                                    <div class="action">
-                                                                        <span onclick="alert()" title="Order Details"
-                                                                            class="iconify"
-                                                                            data-icon="icon-park-outline:transaction-order"></span>
-                                                                        <span onclick="alert()" title="Download Invoice"
-                                                                            class="iconify"
-                                                                            data-icon="carbon:download-study"></span>
-                                                                    </div>
+                                                                <td colspan="4">
+                                                                    <span type="submit"
+                                                                        class="text-white btn-theme add-row"> + Medicine
+                                                                    </span>
                                                                 </td>
                                                             </tr>
 
+                                                            <tr>
+                                                                <td></td>
+                                                                <td colspan="3" class="text-right">
+                                                                    <strong> Subtotal : </strong>
+                                                                    ৳ 2.00
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td colspan="3" class="text-right">
+                                                                    <strong> Shipping Cost : </strong>
+                                                                    <span>1.00</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td colspan="3" class="text-right">
+                                                                    <strong>Total : </strong>
+                                                                    ৳ 3.00
+                                                                </td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
+                                                     <button type="submit"  class="text-white btn-theme float-right mb-3">Add Medication                                               </button>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -415,117 +501,18 @@
     <script src="./js/iconify.min.js"></script>
     <!-- <script src="./js/swiper-bundle.min.js"></script> -->
     <script src='./js/app.js'> </script>
+
+
     <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+        $(document).ready(function () {
+            $(".add-row").click(function () {
+                var markup = "<tr style='position:realative;'> <td width = '200px' style='display:inline-flex;'> <div style='color: white;    padding: 5px;    background: red;    width: 25px;    display: flex;    align-items: center; margin-right:5px;   justify-content: center;    border-radius: 4px;   left: 4px;    top: 81px;'>X</div>  <select class='form-control'><option>napa</option><option>napa</option><option>napa</option></select></td> <td style='width:95px;'><input type='text' class='form-control' value=' '> </td> <td > <input style='min-width: 50px;' type='text' class='form-control' value=' '></td><td style='width:85px'><span> 0</span></td></tr>";
+                $("table #inner ").prepend(markup);
+            });
+        });
+
     </script>
-    <!-- <script src="./js/slick.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            autoplay: {
-                delay: 5000,
-            },
-            loop: true,
-            effect: 'fade',
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
 
-            },
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        $('.slider').slick({
-            arrows: true,
-            infinite: true,
-            slidesToShow: 3,
-            accessibility: true,
-            autoplay: false,
-            autoplaySpeed: 3000,
-            prevArrow: "<span class='arrow prev'><i class='fas fa-angle-left'></i></span>",
-            nextArrow: "<span class='arrow next'><i class='fas fa-angle-right'></i></span>",
-            customPaging: function (slider, i) {
-                /* ADDING CUSTOM PAGING
-                 Example
-                 return  return '<li>Something you want to insert</li>';
-         */
-            },
-            responsive: [
-                {
-                    breakpoint: 1920,
-                    settings: {
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        // dots: true
-                    }
-                },
-                {
-                    breakpoint: 1440,
-                    settings: {
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        // dots: true
-                    }
-                },
-                {
-                    breakpoint: 1025,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        // dots: true
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 425,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 375,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-
-            ]
-        });
-    </script> -->
 
 </body>
 
