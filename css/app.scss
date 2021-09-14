@@ -1990,7 +1990,7 @@ footer {
 .overflow {
   &::-webkit-scrollbar {
     background-color: #E5EAFD;
-    height: 5px;
+    height:0;
   }
 
   &::-webkit-scrollbar-thumb {

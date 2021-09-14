@@ -2247,7 +2247,7 @@ footer .social-sites li a .iconify {
 
 .overflow::-webkit-scrollbar {
   background-color: #E5EAFD;
-  height: 5px;
+  height: 0;
 }
 
 .overflow::-webkit-scrollbar-thumb {
